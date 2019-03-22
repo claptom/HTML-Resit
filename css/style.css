@@ -1,0 +1,18 @@
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+.navigation{
+  width: 100%;
+  text-align: center;
+  background-color: lightgreen;
+  margin: 0;
+  padding: 10px 0;
+}
+.navigation a {
+  padding: 10px;
+  text-decoration: none
+}
