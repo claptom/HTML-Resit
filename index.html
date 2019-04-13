@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:500,700" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="description" content="...">
     <meta name="keywords" content="...">
@@ -13,22 +13,25 @@
     <header>
         <nav class="navigation clearfix" role="navigation">
           <div class="logo-container" role="Logo">
-            <a href="#"><img src="img/logo.svg" alt="Logo"></a>
+            <a href="#"><img src="img/logo-t.svg" alt="Logo"></a>
           </div>
           <div class="cat-container">
             <a href="#about-me"><hr>About Me</a>
             <a href="#work-experience"><hr>Work Experience</a>
             <a href="#education"><hr>Education</a>
-            <a href="#school-projects"><hr>School Projects</a>
+            <a href="#school-projects"><hr><span>School Projects</span></a>
           </div>
         </nav>
         <div class="col-left">
           <div class="header-text">
             <h1><hr> Hi, nice to meet you!</h1>
-
-            <h2>My name is Niclas.</h2>
-
+            <h2>My name is <span>Niclas</span>.</h2>
             <h3>I am a UXD student, studying and enjoying life in Den Haag.</h3>
+            <svg class="btn-about-me" xmlns="http://www.w3.org/2000/svg">
+              <rect class="btn-shadow" x="7" y="7" width="150" height="50"/>
+              <a href="#"><rect class="btn-rect" x="0" y="0" width="150" height="50"/>
+              <text class="btn-text"x="22" y="32">About Me.</text></a>
+            </svg>
           </div>
         </div>
         <div class="col-right">
@@ -42,12 +45,26 @@
           </div>
         </div>
         <div class="col-right">
-          <div class="test2">
+          <div class="facts">
+            <h2>Quick Facts<hr></h2>
+             <ul>
+              <li>20 years old</li>
+              <li>User Experience Design student</li>
+              <li>Living in the hague</li>
+              <li>Born & raised in Germany</li>
+            </ul>
           </div>
         </div>
-    </main>
-    <footer>
-
+        </main>
+        <footer>
+        <div class="wide-container">
+          <h1>Do you have any questions or enquiries?</h1>
+          <svg class="btn-write-me" xmlns="http://www.w3.org/2000/svg">
+            <rect class="btn-shadow" x="7" y="7" width="215" height="50"/>
+            <a href="#"><rect class="btn-rect" x="0" y="0" width="215" height="50"/>
+            <text class="btn-text"x="22" y="32">Let's have a chat.</text></a>
+          </svg>
+        </div>
     </footer>
   </body>
 </html>
