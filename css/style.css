@@ -36,6 +36,10 @@ a:hover {
  color: black;
 }
 
+a:visited {
+  color: grey;
+}
+
 hr {
   display: inline-block;
 }
@@ -420,24 +424,62 @@ header .col-left {
 /* Projects */
 
 .projects {
-  padding: 80px 0 0 0;
+  padding: 80px 0 150px 0;
 }
 
 .projects h1 {
   margin: 0 0 60px 80px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   overflow: hidden;
+  position: relative;
 }
+
+.grid-container h4{
+  font-size: 20px;
+  margin: 20px 20px 0 20px;
+  color: white;
+}
+
+.grid-container p{
+  font-size: 15px;
+  color: white;
+  margin: 5px 20px 20px 20px;
+}
+
+.projects .text-bg {
+  position: absolute;
+  height: 100px;
+  max-width: 70%;
+  bottom: 50px;
+  left: 50px;
+  background-color: rgba(85, 91, 110, .9);
+}
+
+.projects .date-bg {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background-color: rgba(85, 91, 110, .9);
+}
+
+.projects .date-bg p{
+  font-size: 15px;
+  color: white;
+  margin: 10px 10px 10px 10px;
+}
+
 .preview1, .preview2, .preview3,
 .preview4, .preview5, .preview6 {
-  width:auto;
+  width: auto;
   height: 0%;
-  padding-bottom: 100%;
+  padding-bottom: 80%;
 	-webkit-transition: .2s ease-out;
 	transition: .2s ease-out;
+  position: relative;
 }
 
 .preview1:hover, .preview2:hover, .preview3:hover,
