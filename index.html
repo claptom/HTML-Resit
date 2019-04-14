@@ -4,20 +4,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat:500,700" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="description" content="...">
-    <meta name="keywords" content="...">
+    <meta name="description" content="This is the online presence and portfolio of Niclas Schmidt">
+    <meta name="keywords" content="portfolio, niclas schmidt, uxd, cmd, the hague, designer">
     <meta name="author" content="Niclas Schmidt">
     <title>About me</title>
   </head>
   <body>
     <header>
         <nav class="navigation clearfix" role="navigation">
-          <div class="logo-container" role="Logo">
+          <figure class="logo-container" role="Logo">
             <a href="index.html"><img src="img/logo-t.svg" alt="Logo"></a>
-          </div>
+          </figure>
           <div class="cat-container">
             <a href="index.html"><hr>About Me</a>
-            <a href="#work-experience"><hr>Work Experience</a>
+            <a href="#work"><hr>Work Experience</a>
             <a href="#education"><hr>Education</a>
             <a href="#school-projects"><hr><span>School Projects</span></a>
           </div>
@@ -27,27 +27,28 @@
             <h1><hr> Hi, nice to meet you!</h1>
             <h2>My name is <span>Niclas</span>.</h2>
             <h3>I am a UXD student, studying and enjoying life in Den Haag.</h3>
-            <svg class="btn-about-me" xmlns="http://www.w3.org/2000/svg">
+            <svg class="btn-about-me" xmlns="http://www.w3.org/2000/svg" role="button">
               <rect class="btn-shadow" x="7" y="7" width="150" height="50"/>
-              <a href="#"><rect class="btn-rect" x="0" y="0" width="150" height="50"/>
+              <a href="#more-info"><rect class="btn-rect" x="0" y="0" width="150" height="50"/>
               <text class="btn-text"x="22" y="32">About Me.</text></a>
             </svg>
           </div>
         </div>
         <div class="col-right">
-          <div class="header-img">
-          </div>
+
+          <figure class="header-img">
+          </figure>
         </div>
     </header>
     <main>
         <div class="col-left">
-          <div class="more-info">
+          <article class="more-info" id="more-info">
             <h2><hr>Let me introduce myself</h2>
             <p>My name is Niclas Schmidt and I am 20 years old and currently studying User Experience Design at the hague university of applied science. My mother tongue is German but I also speak and write fluently English and do know basics about French, Spanish and Dutch. Please don't hesitate to <a href="#contact">contact me</a> regarding any requests, questions or to simply to say hi.</p>
-          </div>
+          </article>
         </div>
         <div class="col-right">
-          <div class="facts">
+          <aside class="facts">
             <h2>Quick Facts<hr></h2>
              <ul>
               <li>20 years old</li>
@@ -55,20 +56,20 @@
               <li>Living in the hague</li>
               <li>Born & raised in Germany</li>
             </ul>
-          </div>
+          </aside>
         </div>
         </main>
         <footer>
         <div class="col-full">
-          <div class="contact-me">
+          <section class="contact-me">
             <h1>Do you have any questions or enquiries?</h1>
-            <svg class="btn-write-me" xmlns="http://www.w3.org/2000/svg">
+            <svg class="btn-write-me" xmlns="http://www.w3.org/2000/svg" role="button">
               <rect class="btn-shadow" x="7" y="7" width="215" height="50"/>
-              <a href="#"><rect class="btn-rect" x="0" y="0" width="215" height="50"/>
+              <a href="mailto: mail@niclas-schmidt.de"><rect class="btn-rect" x="0" y="0" width="215" height="50"/>
               <text class="btn-text"x="22" y="32">Let's have a chat.</text></a>
             </svg>
-          </div>
-          <div class="work-experience">
+          </section>
+          <section class="work" id="work">
             <h1><hr>Work Experience<h1>
             <div class="col-left">
             <h4><span>Livipur GmbH</span></h4>
@@ -92,8 +93,43 @@
               <li>deliver medicaments to customer (with provided company car)</li>
             </ul>
             </div>
+          </section>
+          <section class="education" id="education">
+            <h1><hr>Education<h1>
+            <div class="edu-box">
+              <h4>Friedrich-Ebert-Schule, 2004 - 2008</h4>
+              <p>Bad Homburg, Germany</p>
+              <p>Primary School</p>
+            </div>
+            <div class="edu-box">
+              <h4>Kaiser-Friedrich-Gymnasium, 2008 - 2014</h4>
+              <p>Bad Homburg, Germany</p>
+              <p>High School</p>
+            </div>
+            <div class="edu-box">
+              <h4>Begemann-Schule, 2014 - 2017</h4>
+              <p>Frankfurt am Main, Germany</p>
+              <p>Econimics High School</p>
+              <p>Designation received.</p>
+            </div>
+            <div class="edu-box">
+              <h4>The Hague University of Applied Science, from 2018</h4>
+              <p>The Hague, Netherlands</p>
+              <p>User Experience Design (CMD)</p>
+            </div>
+        </section>
+        <section class="projects">
+          <h1><hr>Latest Projects</h1>
+          <div class="grid-container">
+            <div class="preview1"></div>
+            <div class="preview2"></div>
+            <div class="preview3"></div>
+            <div class="preview4"></div>
+            <div class="preview5"></div>
+            <div class="preview6"></div>
           </div>
-        </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -40,6 +40,10 @@ hr {
   display: inline-block;
 }
 
+p {
+  font-size: 17px;
+}
+
 h1 {
   font-size: 50px;
   font-weight: 500;
@@ -71,6 +75,11 @@ hr {
 h4 span {
   padding: 0 2px;
   box-shadow: inset 0 -12px 0 0 rgba(252, 163, 17, 1);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 .col-left {
@@ -344,48 +353,130 @@ header .col-left {
 
 /* Work Experience */
 
-.work-experience {
+.work {
   padding: 80px 50px 80px 70px;
   width: 100%;
 }
 
-.work-experience h1 {
+.work h1 {
   font-size: 40px;
 }
 
-.work-experience .col-left p {
+.work .col-left p {
   text-transform: uppercase;
 }
 
-.work-experience p, .work-experience li {
+.work p, .work li {
   font-size: 17px;
   line-height: 28px;
 }
 
-.work-experience hr {
-  margin-bottom: 10px;
+.work hr, .education hr {
+  margin-bottom: 15px;
   width: 30px;
 }
 
-.work-experience .col-left {
+.work .col-left {
   padding: 20px 0 0 50px;
   /* border: 1px solid black; */
   width: 33%;
 }
 
-.work-experience .col-right {
+.work .col-right {
   padding: 0 0 0 0;
   /* border: 1px solid black; */
   width: 65%;
 }
-/* @media screen and (max-width: 1100px) {
-  .col-right {
-    width: 100%
+
+/* Education */
+
+.education {
+  padding: 80px 50px 80px 70px;
+  width: 100%;
+  background-color: white;
+}
+
+.edu-box {
+  padding: 20px 0 20px 50px;
+}
+
+.edu-box p {
+  line-height: 10px;
+}
+
+.edu-box:last-of-type {
+  padding-bottom: 0;
+}
+
+/* Projects */
+.projects {
+  padding: 80px 0 80px 0;
+}
+
+.projects h1 {
+  margin-left: 80px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.preview1, .preview2, .preview3, .preview4, .preview5, .preview6 {
+  min-height: 400px;
+  width:auto;
+  /* border: 1px solid darkgrey; */
+}
+
+.preview1 {
+  background-image: url(../img/trippr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview2 {
+  background-image: url(../img/research.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview3 {
+  background-image: url(../img/experience.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview4 {
+  background-image: url(../img/clanket.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview5 {
+  background-image: url(../img/iux.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preview6 {
+  background-image: url(../img/cheesus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 1100px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
   }
-  .col-left {
-    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
   }
-  .facts {
-    display: none;
-  }
-} */
+}
